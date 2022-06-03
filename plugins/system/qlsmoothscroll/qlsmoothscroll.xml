@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="1.0.1" group="system" method="upgrade">
+    <name>PLG_SYSTEM_QLSMOOTHSCROLL</name>
+    <author>Mareike Riegel</author>
+    <creationDate>12. November 2015</creationDate>
+    <copyright>Copyright (C) 2015 ql.de All rights reserved.</copyright>
+    <authorEmail>mareike.riegel@ql.de</authorEmail>
+    <authorUrl>http://www.ql.de/</authorUrl>
+    <version>1.0.1</version>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>PLG_SYSTEM_QLSMOOTHSCROLL_DESCRIPTION</description>
+    <files>
+        <filename plugin="qlsmoothscroll">qlsmoothscroll.php</filename>
+        <filename plugin="qlsmoothscroll">index.html</filename>
+        <filename plugin="qlsmoothscroll">license.txt</filename>
+        <folder plugin="qlsmoothscroll">js</folder>
+        <folder plugin="qlsmoothscroll">language</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_qlsmoothscroll.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_qlsmoothscroll.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+				<field type="radio" name="jquery"
+					   class="btn-group"
+				       label="PLG_SYSTEM_QLSMOOTHSCROLL_JQUERY_LABEL"
+                       description="PLG_SYSTEM_QLSMOOTHSCROLL_JQUERY_DESC"
+					   default="0">
+					   <option value="1">JYES</option>
+					   <option value="0">JNO</option>
+					   </field>
+                <field type="text" name="offset"
+				       label="PLG_SYSTEM_QLSMOOTHSCROLL_OFFSET_LABEL"
+                       description="PLG_SYSTEM_QLSMOOTHSCROLL_OFFSET_DESC"
+					   default="0"
+					   />
+            </fieldset>
+		</fields>
+	</config>
+</extension>

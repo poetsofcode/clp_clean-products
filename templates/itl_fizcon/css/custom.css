@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebas_neue.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freight Sans";
+  src: url("../fonts/freight_sans.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
